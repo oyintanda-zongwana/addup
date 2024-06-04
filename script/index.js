@@ -5,7 +5,7 @@ function sumArray(numbers) {
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('arrayForm');
     form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        event.preventDefault(); //to prevent the form from submitting
         const input = document.getElementById('numbersInput').value;
         const numbers = input.split(',').map(Number);
         const result = sumArray(numbers);
